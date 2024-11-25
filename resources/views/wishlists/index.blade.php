@@ -28,7 +28,6 @@
                     <td class="px-6 py-4 text-sm">{{ $wishlist->customer->name }}</td>
                     <td class="px-6 py-4 text-sm">{{ $wishlist->product->product_name }}</td>
                     <td class="px-6 py-4">
-                        <a href="{{ route('wishlists.show', $wishlist) }}" class="text-blue-500 hover:underline">View</a> |
                         <a href="{{ route('wishlists.edit', $wishlist) }}" class="text-yellow-500 hover:underline">Edit</a> |
                         <form action="{{ route('wishlists.destroy', $wishlist) }}" method="POST" class="inline-block">
                             @csrf
